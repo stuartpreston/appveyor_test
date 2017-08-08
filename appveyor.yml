@@ -30,6 +30,7 @@ build_script:
   - ps: c:\opscode\chefdk\bin\chef.bat shell-init powershell | iex; cmd /c c:\opscode\chefdk\bin\chef.bat --version
 
 test_script:
+  - c:\opscode
   - c:\opscode\chefdk\bin\cookstyle --version
 
 deploy: off
